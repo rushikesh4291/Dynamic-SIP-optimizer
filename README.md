@@ -18,7 +18,10 @@ This pipeline is decoupled into four primary modules:
 Uses a **Gaussian Hidden Markov Model (HMM)** to classify market environments into "Bull" (Risk-On) and "Bear" (Risk-Off) regimes. 
 * Supports multivariate inputs (Equity Returns + Macroeconomic Indicators).
 * Implements dynamic feature weighting to prevent macro noise from overriding primary price action.
+### 🔍 Regime Detection Heatmap & Macro Correlation
+![HMM Regime Heatmap](assets/hmm_heatmap.png)
 
+![Nifty Macro Correlation](assets/Nifty_Macro_correlation.png)
 ### 2. Portfolio Allocation (HRP)
 During Bull regimes, capital is allocated using **Hierarchical Risk Parity (HRP)**.
 * Replaces flawed naive equal-weighting by allocating capital inverse to cluster variance.
@@ -37,6 +40,8 @@ Abandons flawed academic metrics in favor of institutional-grade mathematics:
 * **Newton-Raphson XIRR:** Calculates exact annualized returns based on irregular daily cash flows.
 * **Cornish-Fisher Modified CVaR:** Accounts for non-normal distributions (fat tails/skewness) in market crashes to calculate true Expected Shortfall.
 * **Vectorized Maximum Drawdown:** O(N) performance for calculating historical peak-to-trough drawdowns.
+### 📉 Maximum Drawdown Analysis
+![Drawdown Comparison](assets/drawdown.png)
 ## 🏆 Performance & Achievements 
 
 **Backtest Parameters:**
@@ -66,6 +71,8 @@ Over the 5-year period, the algorithm absorbed massive dilution to protect capit
 ### Key Milestones Achieved:
 * **Massive Risk Reduction:** The HMM Regime Filter successfully identified the COVID-19 crash, shifting capital to safety and limiting the maximum drawdown to just **-17.93%**, compared to the benchmark averages of -35% to -42%.
 * **Superior Risk-Adjusted Returns:** By minimizing portfolio volatility to 11.56%, the strategy achieved an institutional-grade **Sharpe Ratio of 1.31**, nearly double the performance of standard elite mutual funds.
+### 📉 Equity Curve & Crash Protection
+![Dynamic Strategy Equity Curve](assets/equity_curve.png)
 
 ## 📂 Repository Structure
 
