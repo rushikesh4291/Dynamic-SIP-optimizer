@@ -1,0 +1,17 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data folders and large files
+data/
+*.zip
+*.csv
+*.xlsx
+*.xlsm
+
+# Environment files
+.env
+.venv/
+env/
+venv/
