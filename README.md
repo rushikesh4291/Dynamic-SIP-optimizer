@@ -7,7 +7,7 @@ This project is a **Dynamic Portfolio Manager** built in Python that actively pr
 1. **Senses Danger (Machine Learning):** It continuously reads market data to detect if we are in a safe "Bull" market or a dangerous "Bear" market crash.
 2. **Moves to Safety:** If a crash is detected, it automatically sells your equity funds and parks your money in safe, interest-bearing liquid cash until the storm passes.
 3. **Invests Smartly (Risk Parity):** When the market is safe again, it doesn't just divide your money equally. It mathematically calculates the safest way to distribute your cash across top-performing funds to minimize your risk.
-4. **Pays Real-World Taxes:** Unlike academic projects that fake their profits, this engine includes a custom tax ledger. It deducts real Indian Capital Gains Taxes (STCG @ 20% / LTCG @ 12.5%) and 1% Exit Loads from your cash balance to prove the strategy *actually* works in the real world.
+4. **Pays Real-World Taxes:** This engine includes a custom tax ledger. It deducts real Indian Capital Gains Taxes (STCG @ 20% / LTCG @ 12.5%) and 1% Exit Loads from your cash balance to prove the strategy *actually* works in the real world.
 
 ---
 ## 🧠 Core Architecture
