@@ -36,7 +36,6 @@ A robust Point-in-Time execution engine that handles the realities of live tradi
 * **Idle Cash Yield:** Automatically sweeps uninvested capital into a liquid fund proxy for realistic compounding.
 
 ### 4. Institutional Risk Metrics
-Abandons flawed academic metrics in favor of institutional-grade mathematics:
 * **Newton-Raphson XIRR:** Calculates exact annualized returns based on irregular daily cash flows.
 * **Cornish-Fisher Modified CVaR:** Accounts for non-normal distributions (fat tails/skewness) in market crashes to calculate true Expected Shortfall.
 * **Vectorized Maximum Drawdown:** O(N) performance for calculating historical peak-to-trough drawdowns.
@@ -57,7 +56,7 @@ Over the 5-year period, the algorithm absorbed massive dilution to protect capit
 * **Total Trading Taxes Paid (STCG @ 20%, LTCG @ 12.5%):** ₹217,450
 * **Total Friction Absorbed:** ₹339,195
 
-### Final Institutional Scorecard (Post-Dilution)
+### Final Scorecard (Post-Dilution)
 *Even after paying nearly ₹3.4L in dilution, the dynamic strategy vastly outperformed traditional buy-and-hold benchmarks on a risk-adjusted basis.*
 
 | Strategy / Benchmark | Category | True Net Profit (After Taxes/Fees) | XIRR (%) | Sharpe | Volatility | Max Drawdown |
