@@ -1,6 +1,6 @@
-# Dynamic SIP Optimizer 📈
+# Dynamic SIP Optimizer 
 
-### 💡 What Does This Project Actually Do?
+###  What Does This Project Actually Do?
 If you invest in a standard Mutual Fund SIP (Systematic Investment Plan), your money rides the rollercoaster of the market—meaning you take massive financial hits during crashes like COVID-19. 
 
 This project is a **Dynamic Portfolio Manager** built in Python that actively protects your capital. Instead of blindly holding funds through a crash, this algorithm:
@@ -10,7 +10,7 @@ This project is a **Dynamic Portfolio Manager** built in Python that actively pr
 4. **Pays Real-World Taxes:** This engine includes a custom tax ledger. It deducts real Indian Capital Gains Taxes (STCG @ 20% / LTCG @ 12.5%) and 1% Exit Loads from your cash balance to prove the strategy *actually* works in the real world.
 
 ---
-## 🧠 Core Architecture
+##  Core Architecture
 
 This pipeline is decoupled into four primary modules:
 
@@ -18,7 +18,7 @@ This pipeline is decoupled into four primary modules:
 Uses a **Gaussian Hidden Markov Model (HMM)** to classify market environments into "Bull" (Risk-On) and "Bear" (Risk-Off) regimes. 
 * Supports multivariate inputs (Equity Returns + Macroeconomic Indicators).
 * Implements dynamic feature weighting to prevent macro noise from overriding primary price action.
-### 🔍 Regime Detection Heatmap & Macro Correlation
+###  Regime Detection Heatmap & Macro Correlation
 ![HMM Regime Heatmap](assets/hmm_heatmap.png)
 
 ![Nifty Macro Correlation](assets/Nifty_Macro_correlation.png)
@@ -39,9 +39,9 @@ A robust Point-in-Time execution engine that handles the realities of live tradi
 * **Newton-Raphson XIRR:** Calculates exact annualized returns based on irregular daily cash flows.
 * **Cornish-Fisher Modified CVaR:** Accounts for non-normal distributions (fat tails/skewness) in market crashes to calculate true Expected Shortfall.
 * **Vectorized Maximum Drawdown:** O(N) performance for calculating historical peak-to-trough drawdowns.
-### 📉 Maximum Drawdown Analysis
+###  Maximum Drawdown Analysis
 ![Drawdown Comparison](assets/drawdown.png)
-## 🏆 Performance & Achievements 
+##  Performance & Achievements 
 
 **Backtest Parameters:**
 * **Time Duration:** 5 Years (January 1, 2019 – January 1, 2024)
@@ -61,7 +61,7 @@ Over the 5-year period, the algorithm absorbed massive dilution to protect capit
 
 | Strategy / Benchmark | Category | True Net Profit (After Taxes/Fees) | XIRR (%) | Sharpe | Volatility | Max Drawdown |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **👑 TRUE DYNAMIC STRATEGY** | **Algorithmic + HMM** | **₹2,164,310** | **21.86%** | **1.31** | **11.56%** | **-17.93%** |
+| ** TRUE DYNAMIC STRATEGY** | **Algorithmic + HMM** | **₹2,164,310** | **21.86%** | **1.31** | **11.56%** | **-17.93%** |
 | HDFC Flexi Cap Fund | Flexi Cap | ₹2,055,972 | 25.49% | 0.69 | 19.36% | -42.06% |
 | Nippon India Large Cap | Large Cap | ₹1,903,366 | 24.20% | 0.64 | 19.48% | -39.96% |
 | Parag Parikh Flexi Cap | Flexi Cap | ₹1,894,411 | 24.12% | 1.09 | 14.42% | -31.26% |
@@ -73,7 +73,7 @@ Over the 5-year period, the algorithm absorbed massive dilution to protect capit
 ### 📉 Equity Curve & Crash Protection
 ![Dynamic Strategy Equity Curve](assets/equity_curve.png)
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 Dynamic-SIP-optimizer/
